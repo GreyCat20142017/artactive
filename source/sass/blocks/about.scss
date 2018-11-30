@@ -1,0 +1,79 @@
+.about {
+  margin: 0;
+  padding: 0;
+}
+
+.about__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__title {
+  @include section-title();
+}
+
+.about__subtitle {
+  @include section-subtitle();
+}
+
+.about__item {
+  max-width: 120px;
+  padding-top: 110px;
+  font-size: 13px;
+  margin: 10px auto 0;
+  position: relative;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 106px;
+    height: 106px;
+    border: 33px transparent solid;
+    border-radius: 50%;
+    background-color: $basepink;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    z-index: 1;
+  }
+}
+
+.about__item:nth-child(3n-1) {
+  margin: 10px 0 0 auto;
+}
+
+.about__item:nth-child(3n) {
+  margin: 10px auto 0 0;
+}
+
+.about__item--ebook {
+  &::before {
+    background-image: url("../img/about-ebook.png");
+  }
+}
+
+.about__item--design {
+  &::before {
+    background-image: url("../img/about-design.png");
+  }
+}
+
+.about__item--processing {
+  &::before {
+    background-image: url("../img/about-processing.png");
+  }
+}
+
+.about__item--delivery {
+  &::before {
+    background-image: url("../img/about-delivery.png");
+  }
+}

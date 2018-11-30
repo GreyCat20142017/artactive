@@ -1,0 +1,20 @@
+.action {
+  margin: 0;
+  padding: 24px;
+  background-color: $basecolor;
+  color: $basewhite;
+  box-shadow: 0 23px 32px 0 rgba(81, 8, 86, 0.33);
+  border-radius: 10px;
+}
+
+.action__about {
+  font-size: 13px;
+  line-height: 24px;
+  font-style: italic;
+}
+
+.action__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}

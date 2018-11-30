@@ -1,0 +1,19 @@
+.contacts {
+  padding: 40 45px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__title {
+  @include section-title();
+}
+
+.contacts__info {
+  padding: 0;
+  margin: 22px 0 0;
+  font-size: 14px;
+  font-weight: 400px;
+  color: $basedark;
+  text-decoration: none;
+}

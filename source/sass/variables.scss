@@ -1,0 +1,23 @@
+// Вещи, характерные только для препроцессора(названия переменных и параметров примесей) осознанно сделала со слитным написанием, но единообразно
+$basewhite: rgb(255, 255, 255);
+$basedark: rgb(94, 96, 106);
+$basecolor: rgb(127, 56, 189);
+
+$basered: rgb(251, 2, 117);
+$basepink: rgb(240, 226, 255);
+$baseyellow: rgb(255, 221, 60);
+$baseblue: rgb(53, 148, 221);
+
+$darkpercent: 10%;
+
+$opensans:  "OpenSans", "Arial", sans-serif;
+
+$mobilewidth: 320px;
+$mobilewidthonly: 767px;
+$tabletwidth: 768px;
+$nondesktopwidth: 1169px;
+$desktopwidth: 1170px;
+$desktopwidewidth: 1200px;
+
+$retinadpi: 144dpi;
+$retinadppx: 1.5dppx;

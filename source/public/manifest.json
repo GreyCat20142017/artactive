@@ -1,0 +1,15 @@
+{
+  "short_name": "ArtActive",
+  "name": "Верстка в целях самообразования по мотивам макета ArtActive",
+  "icons": [
+    {
+      "src": "./favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "white",
+  "background_color": "#883eca"
+}

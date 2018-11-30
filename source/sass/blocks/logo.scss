@@ -1,0 +1,19 @@
+.logo__img {
+  display: block;
+  width: 107px;
+  height: 13px;
+}
+
+@media (min-width: $tabletwidth) {
+  .logo__img {
+    width: 107px;
+    height: 13px;
+  }
+}
+
+@media (min-width: $desktopwidth) {
+  .logo__img {
+    width: 107px;
+    height: 13px;
+  }
+}

@@ -1,0 +1,107 @@
+.slider__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.slider__figure {
+  display: block;
+  width: 291px;
+  margin: 10px auto;
+  padding: 0;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  box-shadow: 0 20px 46px 0 rgba(80, 9, 79, 0.35);
+}
+
+.slider__caption {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+.slider__text {
+  @include section-text;
+}
+
+.slider__person {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.slider__link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: $baseblue;
+  text-decoration: none;
+}
+
+.slider__controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.slider__control {
+  display: inline-block;
+  width: 90px;
+  height: 14px;
+  position: relative;
+
+  &--prev::before {
+    content: "<";
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    color: $basecolor;
+  }
+
+  &--prev::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 80px;
+    height: 2px;
+    background-color: $basecolor;
+  }
+
+  &--prev:hover::after {
+    background-color: red;
+  }
+
+  &--prev:hover::before {
+    color: red;
+  }
+
+  &--next::after {
+    content: ">";
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    color: $basecolor;
+  }
+
+  &--next::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 80px;
+    height: 2px;
+    background-color: $basecolor;
+  }
+
+  &--next:hover::before {
+    background-color: red;
+  }
+
+  &--next:hover::after {
+    color: red;
+  }
+}

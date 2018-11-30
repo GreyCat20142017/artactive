@@ -1,0 +1,80 @@
+.option__back {
+  fill: $lightgrey;
+  stroke: $lightgrey;
+  color: $lightgrey;
+}
+
+.option__link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 50px;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $darkgrey;
+  box-shadow: 0 0 1px 0 $lightgrey;
+  font-family: $latofont;
+}
+
+.option__image {
+  order: -1;
+  max-width: 10%;
+}
+
+.option__text {
+  max-width: 85%;
+  margin: 0 10px;
+  padding: 0;
+  font-size: 14px;
+}
+
+.option__icon {
+  fill: $darkgrey;
+}
+
+.option__link:hover,
+.option__link:focus,
+.option__link:active {
+  background-color: $basered;
+  color: $basewhite;
+}
+
+.option__link:active {
+  opacity: 0.5;
+}
+
+.option__link:hover .option__icon,
+.option__link:focus .option__icon {
+  fill: red;
+  stroke: red;
+  color: red;
+}
+
+.option__link:hover .option__back,
+.option__link:focus .option__back {
+  fill: white;
+  stroke: white;
+  color: white;
+}
+
+@media (min-width: $tabletwidth) {
+  .option__text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktopwidth) {
+  .option--invert .option__link {
+    justify-content: flex-end;
+  }
+
+  .option__link {
+    min-height: 53px;
+  }
+
+  .option--invert .option__text {
+    order: -1;
+  }
+}

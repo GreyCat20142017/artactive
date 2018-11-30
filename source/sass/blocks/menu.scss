@@ -1,0 +1,60 @@
+.menu {
+  padding: 0 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.menu__item {
+  width: 100%;
+}
+
+.menu__link {
+  display: block;
+  color: $basewhite;
+  background-color: $basecolor;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    color: $basered;
+  }
+}
+
+.menu--main .menu__link {
+  &--current {
+    color: $basered;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: auto;
+      height: 2px;
+      background-color: darken($basecolor, 40%);
+      left: 0;
+      right: 0;
+      margin: 0 25px;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktopwidth) {
+  .menu {
+    display: flex;
+  }
+}

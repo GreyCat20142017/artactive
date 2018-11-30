@@ -1,0 +1,16 @@
+.faq__title {
+  @include section-title();
+}
+
+.faq__question {
+  margin: 40px 0 34px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.faq__answer {
+  @include section-text();
+  margin: 0;
+  padding: 0;
+}

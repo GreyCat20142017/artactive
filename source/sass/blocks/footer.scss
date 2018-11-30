@@ -1,0 +1,17 @@
+.footer {
+  padding: 52px 82px;
+  background-color: $basecolor;
+  color: $basewhite;
+  font-size: 13px;
+  text-align: center;
+}
+
+.footer__confidentiality {
+  font-size: 13px;
+  color: $basewhite;
+
+  &:hover,
+  &:focus {
+    color: red;
+  }
+}
