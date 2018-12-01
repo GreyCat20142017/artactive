@@ -1,5 +1,15 @@
+.faq {
+  padding: 20px 0;
+}
+
 .faq__title {
   @include section-title();
+}
+
+.faq__items {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
 }
 
 .faq__question {
@@ -13,4 +23,19 @@
   @include section-text();
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $desktopwidth) {
+  .faq__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .faq__item {
+    width: 49%;
+  }
+
+  .faq__item:nth-of-type(2n) {
+    margin-left: 2%;
+  }
 }

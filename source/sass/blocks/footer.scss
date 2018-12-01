@@ -1,9 +1,13 @@
 .footer {
-  padding: 52px 82px;
+  padding: 52px 52px;
   background-color: $basecolor;
   color: $basewhite;
   font-size: 13px;
   text-align: center;
+}
+
+.footer__designer {
+  display: none;
 }
 
 .footer__confidentiality {
@@ -13,5 +17,24 @@
   &:hover,
   &:focus {
     color: red;
+  }
+}
+
+@media (min-width: $tabletwidth) {
+  .footer__copyright {
+    order: -1;
+  }
+}
+
+@media (min-width: $desktopwidth) {
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer__designer {
+    display: block;
   }
 }
