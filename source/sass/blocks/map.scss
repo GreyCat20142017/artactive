@@ -1,0 +1,27 @@
+.map {
+  position: relative;
+  overflow: hidden;
+}
+
+.map__containter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.map__contacts {
+  z-index: 1;
+}
+
+@media (min-width: $tabletwidth) {
+  .map {
+    min-height: 470px;
+    padding: 62px 0 85px;
+  }
+
+  .map__containter {
+    min-height: 470px;
+  }
+}

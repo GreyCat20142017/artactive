@@ -49,6 +49,11 @@
   height: 14px;
   position: relative;
 
+
+  &:hover {
+    box-shadow: 0 2px 10px 1px grey;
+  }
+
   &--prev::before {
     content: "<";
     font-size: 14px;
@@ -103,5 +108,11 @@
 
   &--next:hover::after {
     color: red;
+  }
+}
+
+@media (min-width: $tabletwidth) {
+  .slider__figure {
+    width: 100%;
   }
 }

@@ -20,9 +20,14 @@
   font-size: 18px;
   text-align: center;
 
-  &:hover,
+  &:hover {
+    background-color: lighten($basecolor, $darkpercent);
+    color: $basered;
+  }
+
   &:focus {
     color: $basered;
+    background-color: darken($basecolor, $darkpercent);
   }
 }
 
@@ -56,5 +61,16 @@
 @media (min-width: $desktopwidth) {
   .menu {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  .menu__item {
+    width: auto;
+  }
+
+  .menu__link {
+    display: inline-block;
   }
 }

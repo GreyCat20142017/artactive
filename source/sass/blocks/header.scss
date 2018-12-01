@@ -5,13 +5,14 @@
   flex-wrap: wrap;
   background-color: $basecolor;
   color: $basewhite;
-  background-repeat: no-repeat;
 }
 
-.header__wrapper {
+.header__navigation {
   display: flex;
-  align-items: flex-start;
-  margin-left: auto;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: start;
 }
 
 .header__links {
@@ -19,7 +20,9 @@
 }
 
 .header__content {
-  margin-top: 240px;
+  padding-top: 240px;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 .header__toggle {
@@ -27,6 +30,7 @@
   border: none;
   width: 25px;
   height: 16px;
+
   background-repeat: no-repeat;
   background-position: center;
   margin-left: auto;
@@ -44,16 +48,17 @@
   }
 }
 
-.header__navigation--opened + .header__wrapper > .header__toggle {
+.header__navigation--opened .header__toggle {
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 10px;
-    left: -3px;
-    width: 27px;
+    display: block;
+    top: 7px;
+    left: 0;
+    width: 25px;
     height: 2px;
-    background-color: $basedark;
+    background-color: $basewhite;
   }
 
   &::before {
@@ -65,7 +70,7 @@
   }
 }
 
-.header__navigation--closed + .header__wrapper > .header__toggle {
+.header__navigation--closed .header__toggle {
   width: 24px;
   background-image: repeating-linear-gradient(to bottom, $basewhite 0, $basewhite 2px, transparent 2px, transparent 6px);
   background-size: 25px 16px;
@@ -74,14 +79,18 @@
 
 .header__link {
   color: $basewhite;
+  text-decoration: none;
+  display: inline-block;
+  padding: 11px 12px;
 }
 
-
 @media (max-width: $mobilewidthonly) {
-  .header {
+  .header__content {
     background-image: url("../img/header-mobile@1x.png");
   }
+}
 
+@media (max-width: $nondesktopwidth) {
   .header__toggle {
     display: block;
     margin-left: auto;
@@ -105,29 +114,62 @@
 }
 
 @media (min-width: $mobilewidthonly) and (min-resolution: $retinadpi), (min-width: $mobilewidthonly) and (min-resolution: $retinadppx) {
-  .header {
+  .header__content {
     background-image: url("../img/header-mobile@2x.png");
   }
 }
 
 @media (min-width: $tabletwidth) {
   .header {
+    position: relative;
+  }
+
+  .header::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    left: 0;
+    width: 19px;
+    height: 31px;
+    margin: 0 auto;
+    border: 2px solid $basewhite;
+    border-radius: 10px;
+  }
+
+  .header__content {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 60%;
     background-image: url("../img/header-tablet@1x.png");
+    background-position-x: -100px;
   }
 }
 
+
 @media (min-width: $tabletwidth) and (min-resolution: $retinadpi), (min-width: $tabletwidth) and (min-resolution: $retinadppx) {
-  .header {
+  .header__content {
     background-image: url("../img/header-tablet@2x.png");
   }
 }
 
 @media (min-width: $desktopwidth) {
-  .header {
+  .header__content {
     background-image: url("../img/header-desktop@1x.png");
+    padding-bottom: 120px;
   }
 
-  .heade__links {
+  .header__navigation {
+    display: flex;
+    width: 100%;
+  }
+
+  .header__menu {
+    margin-left: auto;
+  }
+
+  .header__links {
     display: flex;
     flex-wrap: wrap;
   }
@@ -135,7 +177,7 @@
 
 
 @media (min-width: $desktopwidth) and (min-resolution: $retinadpi), (min-width: $desktopwidth) and (min-resolution: $retinadppx) {
-  .header {
+  .header__content {
     background-image: url("../img/header-desktop@2x.png");
   }
 }

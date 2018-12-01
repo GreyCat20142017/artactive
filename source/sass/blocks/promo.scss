@@ -1,6 +1,7 @@
 .promo__slogan {
   font-weight: 800;
   font-size: 40px;
+  text-transform: uppercase;
   line-height: 1.01;
 }
 
@@ -14,4 +15,15 @@
 
 .promo__info {
   font-size: 16px;
+}
+
+@media (min-width: $tabletwidth) {
+  .promo__button {
+    width: 247px;
+    margin: 0;
+  }
+
+  .promo__slogan {
+    font-size: 45px;
+  }
 }
