@@ -2,18 +2,17 @@
   margin: 0;
   padding: 40px 0;
   background-color: $almostwhite;
+  counter-reset: srv-counter;
 }
 
 .service__title {
   @include section-title();
 }
 
-.service__subtitle {
-  @include section-subtitle();
-}
-
 .service__text {
   @include section-text();
+  position: relative;
+  z-index: 1;
 }
 
 .service__button {
@@ -26,16 +25,31 @@
   list-style: none;
 }
 
-.service_item {
+.service__item {
   position: relative;
+  padding-top: 40px;
 }
 
-.service_item::before {
-  content: "";
-  position: absolute;
-  font-size: 200px;
-  line-height: 1;
-  text-shadow: 0 0 21px rgba(81, 8, 86, 0.08);
+.service__subtitle {
+  @include section-subtitle();
+  position: relative;
+
+  &::before {
+    content: counter(srv-counter);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 130px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 21px rgba(81, 8, 86, 0.08);
+    counter-increment: srv-counter;
+  }
+}
+
+.service__subtitle span {
+  position: relative;
+  z-index: 1;
 }
 
 .service__banner-items {
@@ -113,7 +127,6 @@
   }
 }
 
-
 @media (min-width: $tabletwidth) and (min-resolution: $retinadpi), (min-width: $tabletwidth) and (min-resolution: $retinadppx) {
   .service__item--interior {
     background-image: url("../img/interior-tablet@2x.png");
@@ -143,23 +156,33 @@
     min-height: 480px;
   }
 
+  .service__title {
+    margin-bottom: 0;
+  }
+
+  .service__subtitle::before {
+    left: -50px;
+  }
+
   .service__item--banner .service__subtitle {
-    width: 49%;
+    width: 47%;
+    margin: 0;
   }
 
   .service__banner-slider {
-    width: 49%;
+    width: 47%;
     position: absolute;
     top: 0;
     right: 0;
   }
 
   .service__banner-items {
-    width: 49%;
+    width: 47%;
+    margin: 20px;
   }
 
   .service__banner-order {
-    width: 49%;
+    width: 47%;
   }
 
   .service__item--interior {

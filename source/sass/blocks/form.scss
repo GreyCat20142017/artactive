@@ -1,27 +1,113 @@
 .form {
   padding: 20px 0;
+
+  &--dark {
+    padding: 45px 25px;
+    color: $basewhite;
+    background-color: $basecolor;
+    border-radius: 10px;
+    box-shadow: 0 23px 32px 0 rgba(81, 8, 86, 0.33);
+  }
+
+  &--light {
+    padding: 45px 25px;
+    color: $basedark;
+    background-color: transparent;
+  }
 }
 
-.form--dark {
-  padding: 45px 25px;
-  color: $basewhite;
-  background-color: $basecolor;
-  border-radius: 10px;
-  box-shadow: 0 23px 32px 0 rgba(81, 8, 86, 0.33);
+.form__fieldset {
+  padding: 10px 0;
 }
 
 .form__button {
   width: 100%;
 }
 
+.form__input {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid;
+  margin-bottom: 20px;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0;
+  }
+}
+
+.form--dark .form__input:focus {
+  background-color: darken($basecolor, $darkpercent);
+}
+
+.form--light .form__input:focus {
+  background-color: darken($basewhite, $darkpercent);
+}
+
+.form__input::-moz-placeholder {
+  font-style: italic;
+}
+
+.form__input::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.form__input::-ms-input-placeholder {
+  font-style: italic;
+}
+
+.form__input::placeholder {
+  font-style: italic;
+}
+
+.form--dark .form__input::-moz-placeholder {
+  color: $basewhite;
+}
+
+.form--dark .form__input::-webkit-input-placeholder {
+  color: $basewhite;
+}
+
+.form--dark .form__input::-ms-input-placeholder {
+  color: $basewhite;
+}
+
+.form--dark .form__input::placeholder {
+  color: $basewhite;
+}
+
 @media (min-width: $tabletwidth) {
   .form--dark {
+    padding: 20px;
     background-image: linear-gradient(-90deg, #a044ff 0%, #6a3093 100%);
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: auto;
   }
+
+  .form__fieldset {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__field {
+    width: 30%;
+  }
+
+  .form__input {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .form__button {
+    width: 30%;
+  }
 }
 
-// @media (min-width: $desktopwidth) {
-// }
+@media (min-width: $desktopwidth) {
+  .form--dark {
+    padding: 20px 120px 20px 260px;
+  }
+}

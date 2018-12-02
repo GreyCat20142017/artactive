@@ -23,11 +23,13 @@
   &:hover {
     background-color: lighten($basecolor, $darkpercent);
     color: $basered;
+    border-radius: 25px;
   }
 
   &:focus {
     color: $basered;
     background-color: darken($basecolor, $darkpercent);
+    border-radius: 25px;
   }
 }
 

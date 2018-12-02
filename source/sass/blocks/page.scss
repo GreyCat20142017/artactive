@@ -2,4 +2,12 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  counter-reset: section-counter;
+}
+
+.page__counter {
+  &::before {
+    content: counter(section-counter) ". ";
+    counter-increment: section-counter;
+  }
 }

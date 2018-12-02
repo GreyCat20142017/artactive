@@ -24,16 +24,16 @@
   .footer__copyright {
     order: -1;
   }
-}
 
-@media (min-width: $desktopwidth) {
-  .footer {
+  .footer__layout {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
 
+@media (min-width: $desktopwidth) {
   .footer__designer {
     display: block;
   }
