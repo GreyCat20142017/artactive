@@ -102,10 +102,6 @@
 }
 
 @media (min-width: $tabletwidth) {
-  .service__form {
-    width: 40%;
-  }
-
   .service__item--interior .service__subtitle,
   .service__item--interior .service__text {
     width: 70%;
@@ -121,9 +117,21 @@
   }
 
   .service__item--polygraphy {
-    background-image: url("../img/abstract-tablet@1x.png");
-    background-position-x: 130%;
-    background-position-y: bottom;
+    padding-bottom: 40px;
+    background-image: url("../img/plane-tablet@1x.png"), url("../img/abstract-tablet@1x.png");
+    background-position: 40% calc(100% - 110px), 130% 100%;
+  }
+
+  .service__item--polygraphy .form--light {
+    width: 40%;
+  }
+
+  .service__item--polygraphy .form__fieldset {
+    flex-direction: column;
+  }
+
+  .service__item--polygraphy .form__field {
+    width: 100%;
   }
 }
 
@@ -133,7 +141,7 @@
   }
 
   .service__item--polygraphy {
-    background-image: url("../img/abstract-tablet@2x.png");
+    background-image: url("../img/plane-tablet@2x.png"), url("../img/abstract-tablet@2x.png");
   }
 }
 
@@ -195,10 +203,30 @@
   }
 
   .service__item--polygraphy {
-    padding-right: 60%;
-    padding-bottom: 80px;
-    background-image: url("../img/abstract-desktop@1x.png");
-    background-position: top right;
+    padding-right: 0;
+    padding-bottom: 40px;
+    background-image: url("../img/plane-desktop@1x.png"), url("../img/abstract-desktop@1x.png");
+    background-position: 100% calc(100% - 70px), 100% 0;
+  }
+
+  .service__item--polygraphy .service__item-wrapper {
+    width: 40%;
+  }
+
+  .service__item--polygraphy .service__form {
+    width: 60%;
+  }
+
+  .service__item--polygraphy .form__fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .service__item--polygraphy .form__field,
+  .service__item--polygraphy .form__button {
+    width: 30%;
   }
 }
 
@@ -209,6 +237,6 @@
   }
 
   .service__item--polygraphy {
-    background-image: url("../img/abstract-desktop@2.png");
+    background-image: url("../img/plane-desktop@2x.png"), url("../img/abstract-desktop@2x.png");
   }
 }

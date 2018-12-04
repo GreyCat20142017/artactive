@@ -10,7 +10,7 @@
 }
 
 .promo__button {
-  margin: 0 auto;
+  margin: 40px auto 30px;
 }
 
 .promo__info {
@@ -25,5 +25,28 @@
 
   .promo__slogan {
     font-size: 45px;
+  }
+}
+
+@media (min-width: $desktopwidth) {
+  .promo__title {
+    margin: 60px 0 80px;
+  }
+
+  .promo__more {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .promo__info {
+    margin: 0;
+    width: 47%;
+    padding: 0;
+  }
+
+  .promo__button {
+    width: 47%;
   }
 }

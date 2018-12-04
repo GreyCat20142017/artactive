@@ -1,7 +1,7 @@
 'use strict';
 
 (function(){
-// /мобильное меню ----------------------------------------
+// мобильное меню ----------------------------------------
 var navMain = document.querySelector('.header__navigation');
 var navToggle = document.getElementById('id-toggle');
 

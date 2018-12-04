@@ -1,8 +1,7 @@
 .form {
-  padding: 20px 0;
+  padding: 45px 25px;
 
   &--dark {
-    padding: 45px 25px;
     color: $basewhite;
     background-color: $basecolor;
     border-radius: 10px;
@@ -10,7 +9,6 @@
   }
 
   &--light {
-    padding: 45px 25px;
     color: $basedark;
     background-color: transparent;
   }
@@ -31,6 +29,7 @@
   border: none;
   border-bottom: 1px solid;
   margin-bottom: 20px;
+  width: 100%;
 
   &:focus {
     outline: none;
@@ -81,33 +80,9 @@
 @media (min-width: $tabletwidth) {
   .form--dark {
     padding: 20px;
-    background-image: linear-gradient(-90deg, #a044ff 0%, #6a3093 100%);
+    background-image: linear-gradient(-90deg, #a044ff 0%, #6a3093 100%), linear-gradient(135deg, #a044ff 0%, #6a3093 100%);
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: auto;
-  }
-
-  .form__fieldset {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .form__field {
-    width: 30%;
-  }
-
-  .form__input {
-    width: 100%;
-    margin-bottom: 0;
-  }
-
-  .form__button {
-    width: 30%;
-  }
-}
-
-@media (min-width: $desktopwidth) {
-  .form--dark {
-    padding: 20px 120px 20px 260px;
   }
 }

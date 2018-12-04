@@ -1,0 +1,21 @@
+.reviews {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: $desktopwidth) {
+  .reviews__slider .slider__slide {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .reviews__slider .slider__wrapper {
+    margin-left: 20px;
+  }
+
+  .reviews__slider .slider__controls {
+    margin-left: 10%;
+  }
+}

@@ -1,6 +1,6 @@
-* {
-  // outline: 1px dashed red;
-}
+// * {
+//   outline: 1px dashed red;
+// }
 
 
 @font-face {
@@ -67,4 +67,5 @@ html {
 
 body {
   font-family: $opensans;
+  overflow-x: hidden;
 }

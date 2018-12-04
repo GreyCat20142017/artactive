@@ -23,8 +23,8 @@
   </div> -->
   <h1 class="visually-hidden">Оперативная полиграфия и широкоформатная печать</h1>
 
-  <header class='header'>
-    <div class="layout">
+  <header class='header' id="header">
+    <div class="header__layout layout">
       <nav class="header__navigation header__navigation--closed header__navigation--nojs">
         <a class="header__logo logo" title="Логотип ArtActive">
           <img class="logo__img" src="img/logo-mobile@1x.png" width="107" height="13" alt="ArtActive" title="Логотип ArtActive">
@@ -33,11 +33,11 @@
         <button class="header__toggle" type="button" id="id-toggle" title="Управление меню"><span class="visually-hidden">Управление меню</span></button>
 
         <ul class="header__menu menu menu--main">
-          <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">FAQ</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+          <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+          <li class="menu__item"><a class="menu__link" href="#service">Услуги</a></li>
+          <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a></li>
+          <li class="menu__item"><a class="menu__link" href="#faq">FAQ</a></li>
+          <li class="menu__item"><a class="menu__link" href="#map">Контакты</a></li>
         </ul>
 
         <p class="header__links">
@@ -55,11 +55,12 @@
           <p class="promo__info">С доставкой по Ярославлю и Ярославской области</p>
         </div>
       </div>
+      <a class="header__footer" href="#footer" title="Перейти к подвалу сайта"><span class="visually-hidden">Перейти к футеру</span></a>
     </div>
   </header>
 
   <main class="main">
-    <section class="about layout">
+    <section class="about layout" id="about">
 
       <div class="about__wrapper">
         <h2 class="about__title page__counter">О нас</h2>
@@ -69,17 +70,19 @@
         <p class="about__text">При этом работа выполняется в максимально сжатые сроки и не в ущерб качеству конечного результата, которое неизменно остается на высоте</p>
       </div>
 
-      <ul class="about__items">
-          <li class="about__item about__item--ebook">Прием и детальное обсуждение заказа</li>
-          <li class="about__item about__item--design">Создание и согласование дизайн-макета</li>
-          <li class="about__item about__item--processing">Печать и постпечатная обработка изделий любых размеров</li>
-          <li class="about__item about__item--delivery">Доставка готовой продукции</li>
-      </ul>
+      <picture class='about__picture'>
+        <source media='(min-width: 1300px)' srcset='img/webp/about-desktop@1x.webp 1x, img/webp/about-desktop@2x.webp 2x' type='image/webp'>
+        <source media='(min-width: 768px)' srcset='img/webp/about-tablet@1x.webp 1x, img/webp/about-tablet@2x.webp 2x' type='image/webp'>
+        <source media='(max-width: 767px)' srcset='img/webp/about-mobile@1x.webp 1x, img/webp/about-mobile@2x.webp 2x' type='image/webp'>
+        <source media='(min-width: 1300px)' srcset='img/about-desktop@1x.png 1x, img/about-desktop@2x.png 2x'>
+        <source media='(min-width: 768px)' srcset='img/about-tablet@1x.jpg 1x, img/about-tablet@2x.jpg 2x'>
+        <img class='about_image' src='img/about-mobile@1x.png'  srcset='img/about-mobile@2x.png 2x' alt='Инфографика: стадии выполнения заказа' title='Инфографика. Стадии выполнения заказа: прием и обсуждение - создание и согласование - печать и обработка - доставка'>
+      </picture>
 
     </section>
 
-    <section class="service">
-      <div class="layout">
+    <section class="service" id="service">
+      <div class="service__layout layout">
       <h2 class="service__title page__counter">Услуги</h2>
       <ul class="service__items">
         <li class="service__item service__item--banner">
@@ -102,7 +105,7 @@
               <source media='(max-width: 767px)' srcset='img/webp/slide-1-mobile@1x.webp 1x, img/webp/slide-1-mobile@2x.webp 2x' type='image/webp'>
               <source media='(min-width: 1300px)' srcset='img/slide-1-desktop@1x.jpg 1x, img/slide-1-desktop@2x.jpg 2x'>
               <source media='(min-width: 768px)' srcset='img/slide-1-tablet@1x.jpg 1x, img/slide-1-tablet@2x.jpg 2x'>
-              <img class='slider__image' src='img/slide-1-mobile@1x.jpg'  srcset='img/slide-1-mobile@2x.jpg 2x' alt='Фото: Растяжка на ул. Ленина' title='Фото: Растяжка на ул. Ленина'>
+              <img class='slider__image slider__image--shadowed' src='img/slide-1-mobile@1x.jpg'  srcset='img/slide-1-mobile@2x.jpg 2x' alt='Фото: Растяжка на ул. Ленина' title='Фото: Растяжка на ул. Ленина'>
             </picture>
 
             <div class="slider__wrapper">
@@ -131,11 +134,12 @@
         </li>
 
         <li class="service__item service__item--pictured service__item--polygraphy">
-          <!-- <div class="service__item-wrapper">   -->
-          <h3 class="service__subtitle"><span>Оперативная полиграфия - от визитки до баннера</span></h3>
-          <p class="service__text">Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка. Lorem ipsum по большей части является элементом латинского текста классического автора и философа Цицерона. Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание; это не гениально, не правильно, используется даже не понятный латинский.</p>
-          <p class="service__text">Хотя Lorem ipsum напоминает классический латинский, вы не найдете никакого смысла в сказанном.</p>
-          <form class="form form--light">
+          <div class="service__item-wrapper">
+            <h3 class="service__subtitle"><span>Оперативная полиграфия - от визитки до баннера</span></h3>
+            <p class="service__text">Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка. Lorem ipsum по большей части является элементом латинского текста классического автора и философа Цицерона. Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание; это не гениально, не правильно, используется даже не понятный латинский.</p>
+            <p class="service__text">Хотя Lorem ipsum напоминает классический латинский, вы не найдете никакого смысла в сказанном.</p>
+          </div>
+          <form class="service__form form form--light">
             <i class="form__about">Есть вопросы?</i>
             <h4 class="form__title">Оставьте заявку на консультацию</h4>
             <div class="form__fieldset">
@@ -147,23 +151,27 @@
                 <label class="form__label visually-hidden" for="id-tel-1">Телефон</label>
                 <input class="form__input" type="text" id="id-tel-1" placeholder="Телефон" title="Телефон" required>
               </div>
+              <button class="form__button btn btn--primary" type="submit" title="Заказать консультацию">Отправить</button>
             </div>
-            <button class="form__button btn btn--primary" type="submit" title="Заказать консультацию">Отправить</button>
           </form>
         </li>
       </ul>
       </div>
     </section>
 
-    <section class="reviews layout">
+    <section class="reviews layout" id="reviews">
       <h2 class="reviews__title page__counter">Отзывы</h2>
       <div class="reviews__slider slider">
-        <img class="slider__image" src="img/person-1@1x.png" alt="Фото: Алексадров Максим">
+
         <div class="slider__slide">
-          <p class="slider__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне все объяснили, показали и сделали по высшему разряду. Советую!</p>
-          <p class="slider__person">Алкесандров Максим, 24 года</p>
-          <a class="slider__link" href="#">vk.com/mr.sharp</a>
+          <img class="slider__image slider__image--rounded" src="img/person-1@1x.png" alt="Фото: Алексадров Максим">
+          <div class="slider__wrapper">
+            <p class="slider__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне все объяснили, показали и сделали по высшему разряду. Советую!</p>
+            <p class="slider__person">Алкесандров Максим, 24 года</p>
+            <a class="slider__link" href="#">vk.com/mr.sharp</a>
+          </div>
         </div>
+
         <div class="slider__controls">
           <a class="slider__control slider__control--prev" href="#" title="Предыдущий слайд"><span class="visually-hidden">Предыдущий</span></a>
           <a class="slider__control slider__control--next" href="#" title="Следующий слайд"><span class="visually-hidden">Следующий</span></a>
@@ -171,7 +179,7 @@
       </div>
     </section>
 
-    <section class="faq layout">
+    <section class="faq layout" id="faq">
       <h2 class="faq__title page__counter">Частые вопросы (FAQ)</h2>
       <ul class="faq__items">
         <li class="faq__item">
@@ -199,7 +207,8 @@
           <p class="faq__answer">В зависимости от стоимости заказа, курьер может доставить вам продукцию бесплатно (при стоимости от 600 руб.) или от 150 руб. в пределах Ярославля и до 500 рублей в пределах Ярославской области.</p>
         </li>
       </ul>
-      <form class="form form--dark">
+
+      <form class="faq__form form form--dark">
         <i class="form__about">Остались вопросы?</i>
         <h4 class="form__title">Оставьте заявку на консультацию</h4>
         <div class="form__fieldset">
@@ -218,11 +227,11 @@
 
   </main>
 
-  <section class="map">
+  <section class="map" id="map">
     <h2 class="visually-hidden">Адрес, карта и контакты</h2>
 
     <div class="map__contacts contacts layout">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper js js__link">
         <h3 class="contacts__title page__counter">Контакты</h3>
         <p class="contacts__info contacts__info--pin">г.Ярославль, проспект Октября, 88</p>
         <a class="contacts__info contacts__info--mail contacts__link" href="mailto:art-aktiv.76@mail.ru" title="E-mail">art-aktiv.76@mail.ru</a>
@@ -236,22 +245,25 @@
       <source media='(max-width: 767px)' srcset='img/webp/map-mobile@1x.webp 1x, img/webp/map-mobile@2x.webp 2x' type='image/webp'>
       <source media='(min-width: 1300px)' srcset='img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x'>
       <source media='(min-width: 768px)' srcset='img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x'>
-      <img class='map__image map__image--static map__image--show' src='img/map-mobile@1x.jpg' srcset='img/map-mobile@2x.jpg 2x' alt='Ярославль, проспект Октября, 88' title='Ярославль, проспект Октября, 88'>
+      <img class='map__image map__image--static map__image--show js js__link' src='img/map-mobile@1x.jpg' srcset='img/map-mobile@2x.jpg 2x' alt='Ярославль, проспект Октября, 88' title='Ярославль, проспект Октября, 88' id="id-map-static">
     </picture>
-    <div class="map__image map__image--api map__image--hide map__image--nojs">
+    <div class="map__image map__image--api map__image--hide map__image--nojs js js__link" id="id-map-api">
 
     </div>
 
   </section>
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="footer__layout layout">
-      <a class="footer__confidentiality" href="confidentiality.html">Политика конфиденциальности</a>
-      <p class="footer__copyright">ООО "АртАктив", 2017 &copy;</p>
+      <a class="footer__confidentiality footer__link  footer__link--underlined" href="confidentiality.html">Политика конфиденциальности</a>
+      <p class="footer__copyright"><a class="footer__link" href="#header" title="Перейти к заголовку сайта">ООО "АртАктив"</a>, 2017 &copy;</p>
       <p class="footer__designer">Designed by Sergey Strogiy</p>
     </div>
   </footer>
 
+
   <script src="js/mobile-menu.js"></script>
+  <!--  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="js/map.js"></script> -->
   </body>
 </html>

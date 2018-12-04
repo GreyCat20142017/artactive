@@ -1,14 +1,11 @@
 .about {
   margin: 0;
-  padding: 0;
+  padding: 40px 0;
 }
 
-.about__items {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 20px 0;
-  list-style: none;
+.about__image {
+  display: block;
+  margin: 0 auto;
 }
 
 .about__title {
@@ -23,102 +20,11 @@
   @include section-text();
 }
 
-.about__item {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 120px;
-  margin: 10px auto 0;
-  padding-top: 110px;
-  font-size: 13px;
-  text-align: center;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
-    display: block;
-    width: 106px;
-    height: 106px;
-    margin: 0 auto;
-    background-color: $basepink;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-origin: content-box;
-    border: 33px transparent solid;
-    border-radius: 50%;
-  }
-}
-
-.about__item:nth-child(3n-1) {
-  margin: 10px 0 0 auto;
-}
-
-.about__item:nth-child(3n) {
-  margin: 10px auto 0 0;
-}
-
-.about__item--ebook {
-  &::before {
-    background-image: url("../img/about-ebook.png");
-  }
-}
-
-.about__item--design {
-  &::before {
-    background-image: url("../img/about-design.png");
-  }
-}
-
-.about__item--processing {
-  &::before {
-    background-image: url("../img/about-processing.png");
-  }
-}
-
-.about__item--delivery {
-  &::before {
-    background-image: url("../img/about-delivery.png");
-  }
-}
-
 @media (min-width: $tabletwidth) {
-  .about__items {
-    padding: 0;
-  }
-
-  .about__item:nth-of-type(3n-2) {
-    margin: 0 0 0 27%;
-  }
-
-  .about__item:nth-of-type(3n-1) {
-    margin: 0 0 0 0 auto;
-    top: -80px;
-  }
-
-  .about__item:nth-of-type(3n) {
-    margin: 0;
-    top: -100px;
-  }
-
-  .about__item:nth-of-type(4n) {
-    margin: 0 0 0 44%;
-    top: -140px;
-  }
-
-  .about__item {
-    width: 200px;
-  }
-}
-
-@media (min-width: $desktopwidth) {
   .about {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .about__title {
@@ -129,29 +35,26 @@
     width: 100%;
   }
 
+  .about__image {
+    order: 1;
+    width: 47%;
+  }
+
+  .about__wrapper {
+    order: 0;
+    width: 100%;
+  }
+}
+
+
+@media (min-width: $desktopwidth) {
+  .about__image {
+    order: 0;
+    width: 47%;
+  }
+
   .about__wrapper {
     order: 1;
-    width: 50%;
-  }
-
-  .about__items {
-    width: 50%;
-    padding: 40px 20px 0;
-  }
-
-  .about__item {
-    position: relative;
-  }
-
-  .about__item:nth-of-type(3n-2) {
-    margin: 0 0 0 20%;
-  }
-
-  .about__item:nth-of-type(3n-1) {
-    margin: 0 0 0 0 auto;
-  }
-
-  .about__item:nth-of-type(4n) {
-    margin: 0 0 0 40%;
+    width: 47%;
   }
 }

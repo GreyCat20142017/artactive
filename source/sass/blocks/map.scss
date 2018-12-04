@@ -3,6 +3,9 @@
   display: flex;
   overflow: hidden;
   width: 100%;
+  min-height: 532px;
+  padding: 65px 15px;
+  margin: 40px 0 0;
 }
 
 .map__image {
@@ -18,8 +21,26 @@
 .map__contacts {
   position: relative;
   display: flex;
-  z-index: 1;
+  align-items: flex-start;
+  z-index: 2;
 }
+
+.map__image--api {
+  width: 100%;
+}
+
+.map__image--hide {
+  display: none;
+}
+
+.map__image--show {
+  display: block;
+}
+
+.map__image--nojs {
+  display: none;
+}
+
 
 @media (min-width: $desktopwidth) {
   .map {

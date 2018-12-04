@@ -2,19 +2,23 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 40px 45px;
+  width: 290px;
+  min-height: 266px;
+  padding: 40px 40px 20px;
   background-color: $basewhite;
   border-radius: 10px;
   box-shadow: 0 23px 32px 0 rgba(0, 0, 0, 0.16);
+  overflow-y: auto;
 }
 
 .contacts__title {
   @include section-title();
+  margin: 0 0 10px;
 }
 
 .contacts__info {
   display: block;
-  margin: 22px 0 0;
+  margin: 18px 0 0;
   padding: 4px 4px 4px 30px;
   font-weight: 400;
   font-size: 14px;
@@ -62,9 +66,14 @@
 }
 
 @media (min-width: $tabletwidth) {
+  .contacts__title {
+    margin: 20px 0;
+  }
+
   .contacts__wrapper {
     width: 50%;
-    padding: 20px 40px 40px;
+    padding: 20px 40px 20px;
+    max-height: 400px;
   }
 }
 
@@ -72,6 +81,6 @@
   .contacts__wrapper {
     width: 458px;
     min-height: 383px;
-    padding: 60px 45px;
+    padding: 60px 45px 20px;
   }
 }

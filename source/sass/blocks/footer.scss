@@ -1,5 +1,4 @@
 .footer {
-  padding: 52px 52px;
   background-color: $basecolor;
   color: $basewhite;
   font-size: 13px;
@@ -10,14 +9,19 @@
   display: none;
 }
 
-.footer__confidentiality {
+.footer__link {
   font-size: 13px;
   color: $basewhite;
+  text-decoration: none;
 
   &:hover,
   &:focus {
     color: red;
   }
+}
+
+.footer__link--underlined {
+  text-decoration: underline;
 }
 
 @media (min-width: $tabletwidth) {

@@ -20,7 +20,11 @@
   margin: 10px 0;
 }
 
-@media (min-width: $desktopwidth) {
+.action__button {
+  margin-top: 40px;
+}
+
+@media (min-width: $tabletwidth) {
   .action {
     @include fix-IE-bug(117px);
     display: flex;
@@ -30,10 +34,26 @@
   }
 
   .action__button {
+    width: 30%;
+    margin-top: 0;
+  }
+
+  .action__wrapper {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktopwidth) {
+  .action__button {
     width: 47%;
+    margin-top: 0;
   }
 
   .action__wrapper {
     width: 47%;
+    flex-direction: column;
   }
 }
