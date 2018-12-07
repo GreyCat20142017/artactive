@@ -122,4 +122,22 @@
   .slider__controls {
     width: 240px;
   }
+
+  .slider__wrapper {
+    display: flex;
+  }
+
+  .slider__wrapper--person {
+    flex-direction: column;
+  }
+
+  .slider__wrapper--simple {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+  }
+
+  .slider__wrapper--simple .slider__controls {
+    order: -1;
+  }
 }

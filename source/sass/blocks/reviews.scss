@@ -18,4 +18,8 @@
   .reviews__slider .slider__controls {
     margin-left: 10%;
   }
+
+  .reviews .slider__slide {
+    @include pictured-ears(url("../img/text-desktop@1x.png"), url("../img/girl-desktop@1x.png"));
+  }
 }

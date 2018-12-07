@@ -76,16 +76,16 @@
         <source media='(max-width: 767px)' srcset='img/webp/about-mobile@1x.webp 1x, img/webp/about-mobile@2x.webp 2x' type='image/webp'>
         <source media='(min-width: 1300px)' srcset='img/about-desktop@1x.png 1x, img/about-desktop@2x.png 2x'>
         <source media='(min-width: 768px)' srcset='img/about-tablet@1x.jpg 1x, img/about-tablet@2x.jpg 2x'>
-        <img class='about_image' src='img/about-mobile@1x.png'  srcset='img/about-mobile@2x.png 2x' alt='Инфографика: стадии выполнения заказа' title='Инфографика. Стадии выполнения заказа: прием и обсуждение - создание и согласование - печать и обработка - доставка'>
+        <img class='about__image' src='img/about-mobile@1x.png'  srcset='img/about-mobile@2x.png 2x' alt='Инфографика: стадии выполнения заказа' title='Инфографика. Стадии выполнения заказа: прием и обсуждение - создание и согласование - печать и обработка - доставка'>
       </picture>
 
     </section>
 
-    <section class="service" id="service">
+    <section class="service dashes" id="service">
       <div class="service__layout layout">
       <h2 class="service__title page__counter">Услуги</h2>
       <ul class="service__items">
-        <li class="service__item service__item--banner">
+        <li class="service__item service__item--banner" id="service-1">
 
           <h3 class="service__subtitle"><span>Широкоформатная печать баннеров, растяжек, афиш</span></h3>
           <ul class="service__banner-items">
@@ -108,7 +108,7 @@
               <img class='slider__image slider__image--shadowed' src='img/slide-1-mobile@1x.jpg'  srcset='img/slide-1-mobile@2x.jpg 2x' alt='Фото: Растяжка на ул. Ленина' title='Фото: Растяжка на ул. Ленина'>
             </picture>
 
-            <div class="slider__wrapper">
+            <div class="slider__wrapper slider__wrapper--simple">
               <p class="slider__caption">Растяжка на ул. Ленина</p>
               <div class="slider__controls">
                 <a class="slider__control slider__control--prev" href="#" title="Предыдущий слайд"><span class="visually-hidden">Предыдущий</span></a>
@@ -127,13 +127,13 @@
           </div>
         </li>
 
-        <li class="service__item service__item--pictured service__item--interior">
+        <li class="service__item service__item--pictured service__item--interior"  id="service-2">
           <h3 class="service__subtitle"><span>Широкоформатная печать для вашего интерьера</span></h3>
           <p class="service__text">Печатаем широкоформатные фотографии на глянцевой и матовой фотобумаге разной плотности, на глянцевом и матовом холсте или на самокллеющейся пленке. Также можем предложить обработку и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь, различные эффекты</p>
           <a class="service__button service__button--interior btn btn--primary" href="order-print.html" title="Оставить заявку">Оставить заявку</a>
         </li>
 
-        <li class="service__item service__item--pictured service__item--polygraphy">
+        <li class="service__item service__item--pictured service__item--polygraphy dashes"  id="service-3">
           <div class="service__item-wrapper">
             <h3 class="service__subtitle"><span>Оперативная полиграфия - от визитки до баннера</span></h3>
             <p class="service__text">Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка. Lorem ipsum по большей части является элементом латинского текста классического автора и философа Цицерона. Слова и буквы были заменены добавлением или сокращением элементов, поэтому будет совсем неразумно пытаться передать содержание; это не гениально, не правильно, используется даже не понятный латинский.</p>
@@ -165,7 +165,7 @@
 
         <div class="slider__slide">
           <img class="slider__image slider__image--rounded" src="img/person-1@1x.png" alt="Фото: Алексадров Максим">
-          <div class="slider__wrapper">
+          <div class="slider__wrapper slider__wrapper--person">
             <p class="slider__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне все объяснили, показали и сделали по высшему разряду. Советую!</p>
             <p class="slider__person">Алкесандров Максим, 24 года</p>
             <a class="slider__link" href="#">vk.com/mr.sharp</a>
@@ -253,6 +253,52 @@
 
   </section>
 
+  <section class="indicator indicator--nojs">
+    <h2 class="visually-hidden">Индикатор прокрутки</h2>
+    <ul class="indicator__items">
+      <li class="indicator__item">
+        <a class="indicator__link indicator__link--current" href="#header" id="ind-1" title="Заголовок сайта и главное меню">
+          <span class="visually-hidden">Заголовок</span>
+        </a>
+      </li>
+      <li class="indicator__item">
+        <a class="indicator__link indicator__link--normal" href="#about" id="ind-2" title="О нас">
+          <span class="visually-hidden">О нас</span>
+        </a>
+      </li>
+      <li class="indicator__item">
+        <a class="indicator__link indicator__link--line" href="#service-1" id="ind-3" title="Печать баннеров">
+          <span class="visually-hidden">Печать баннеров</span>
+        </a>
+      </li>
+      <li class="indicator__item">
+        <a class="indicator__link indicator__link--line" href="#service-2" id="ind-4" title="Печать для интерьера">
+          <span class="visually-hidden">Печать для интерьера</span>
+        </a>
+      </li>
+      <li class="indicator__item">
+        <a class="indicator__link indicator__link--line" href="#service-3" id="ind-5" title="Полиграфия">
+          <span class="visually-hidden">Полиграфия</span>
+        </a>
+      </li>
+      <li class="indicator__item">
+        <a class="indicator__link indicator__link--normal" href="#reviews" id="ind-6" title="Отзывы">
+          <span class="visually-hidden">Отзывы</span>
+        </a>
+      </li>
+      <li class="indicator__item">
+        <a class="indicator__link indicator__link--normal" href="#faq" id="ind-7" title="FAQ">
+          <span class="visually-hidden">FAQ</span>
+        </a>
+      </li>
+      <li class="indicator__item">
+        <a class="indicator__link indicator__link--normal" href="#map" id="ind-8" title="Карта и контакты">
+          <span class="visually-hidden">Карта</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
   <footer class="footer" id="footer">
     <div class="footer__layout layout">
       <a class="footer__confidentiality footer__link  footer__link--underlined" href="confidentiality.html">Политика конфиденциальности</a>
@@ -261,9 +307,9 @@
     </div>
   </footer>
 
-
   <script src="js/mobile-menu.js"></script>
-  <!--  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-  <script src="js/map.js"></script> -->
+  <script src="js/scroll-indicator.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="js/map.js"></script>
   </body>
 </html>

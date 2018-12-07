@@ -10,7 +10,7 @@
   text-transform: uppercase;
   word-wrap: break-word;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .btn--primary {
@@ -19,11 +19,11 @@
 
   &:hover {
     background-color: darken($basered, $darkpercent);
-    background-image: linear-gradient(to bottom, $basered 0%, darken($basered, $darkpercent*2) 100%);
+    background-image: linear-gradient(to bottom, $basered 0%, darken($basered, $darkpercent * 2) 100%);
   }
 
   &:focus {
     background-color: darken($basered, $darkpercent);
-    background-image: linear-gradient(45deg, $basered 0%, darken($basered, $darkpercent*3) 100%);
+    background-image: linear-gradient(45deg, $basered 0%, darken($basered, $darkpercent * 3) 100%);
   }
 }

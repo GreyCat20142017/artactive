@@ -2,25 +2,32 @@
   font-weight: 800;
   font-size: 40px;
   text-transform: uppercase;
-  line-height: 1.01;
+  line-height: 1.05;
+  margin: 40px 0 30px;
 }
 
 .promo__title {
   font-size: 21px;
+  margin: 0;
 }
 
 .promo__button {
-  margin: 40px auto 30px;
+  margin: 44px auto 24px;
 }
 
 .promo__info {
   font-size: 16px;
+  line-height: 20px;
 }
 
 @media (min-width: $tabletwidth) {
+  .promo__title {
+    margin: 45px 0;
+  }
+
   .promo__button {
     width: 247px;
-    margin: 0;
+    margin: 30px 0;
   }
 
   .promo__slogan {
@@ -48,5 +55,6 @@
 
   .promo__button {
     width: 47%;
+    margin: 0;
   }
 }

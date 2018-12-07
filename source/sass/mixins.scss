@@ -43,3 +43,32 @@
   padding: 0;
   font-size: 14px;
 }
+
+@mixin pictured-ears($imgbefore, $imgafter) {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    height: 100%;
+    right: 100%;
+  }
+
+  &::before {
+    right: 103%;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 1) 150px), $imgbefore;
+    background-position: 0 center;
+  }
+
+  &::after {
+    left: 103%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 1) 150px), $imgafter;
+    background-position: 0 center;
+  }
+}
