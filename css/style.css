@@ -405,6 +405,9 @@ body {
             order: 1; } }
 
 @media (min-width: 1170px) {
+  .about {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
   .about__image {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
@@ -888,7 +891,8 @@ body {
 
 @media (max-width: 767px) {
   .header__content {
-    background-image: url("../img/header-mobile@1x.png"); } }
+    background-image: url("../img/header-mobile@1x.png");
+    background-size: 309px 288px; } }
 
 @media (max-width: 1169px) {
   .header__toggle {
@@ -943,6 +947,7 @@ body {
     padding-bottom: 40px;
     padding-left: 60%;
     background-image: url("../img/header-tablet@1x.png");
+    background-size: 546px 462px;
     background-position-x: -100px; } }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
@@ -950,34 +955,40 @@ body {
     background-image: url("../img/header-tablet@2x.png"); } }
 
 @media (min-width: 1170px) {
+  .header {
+    padding: 50px; }
   .header__content {
     background-image: url("../img/header-desktop@1x.png");
+    background-size: 647px 548px;
     padding-bottom: 120px;
     padding-top: 140px; }
   .header__navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     width: 100%; }
   .header__menu {
     padding: 0;
     margin: 0;
-    margin-left: auto; }
+    margin-left: auto;
+    max-width: 550px; }
   .header__links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 0;
     margin: 0;
-    margin-top: 8px; }
+    padding: 3px;
+    max-width: 400px; }
   .header__link {
     display: inline-block;
     vertical-align: bottom;
     min-height: 20px;
     line-height: 20px;
-    padding: 4px 10px;
+    padding: 7px 10px 6px;
     margin-left: 40px; }
     .header__link:hover, .header__link:focus {
       color: #fb0275; }
@@ -987,7 +998,8 @@ body {
   .header__link--order {
     font-size: 11px;
     border: 2px solid white;
-    border-radius: 25px; }
+    border-radius: 30px;
+    width: 165px; }
     .header__link--order:hover {
       background-color: white; }
     .header__link--order:focus {
@@ -1394,7 +1406,8 @@ body {
     position: relative;
     padding-top: 20px; }
   .service__item--interior {
-    background-image: url("../img/interior-mobile@1x.png"); }
+    background-image: url("../img/interior-mobile@1x.png");
+    background-size: 268px 332px; }
   .service__item--polygraphy {
     background-image: url("../img/abstract-mobile@1x.png"); } }
 
@@ -1419,12 +1432,14 @@ body {
     margin: 50px 0; }
   .service__item--interior {
     padding-bottom: 330px;
-    background-image: url("../img/interior-tablet@1x.png"); }
+    background-image: url("../img/interior-tablet@1x.png");
+    background-size: 513px 599px; }
   .service__item--polygraphy {
     padding-bottom: 40px;
     padding-top: 60px;
     background-image: url("../img/plane-tablet@1x.png"), url("../img/abstract-tablet@1x.png");
-    background-position: 40% calc(100% - 110px), 130% 100%; }
+    background-position: 40% calc(100% - 110px), 130% 100%;
+    background-size: 138px 161px, 453px 381px; }
   .service__item--polygraphy .form--light {
     width: 40%; }
   .service__item--polygraphy .form__fieldset {
@@ -1482,15 +1497,16 @@ body {
     padding-bottom: 330px;
     padding-left: 60%;
     background-image: url("../img/interior-desktop@1x.png");
-    background-position-x: -60px;
+    background-position-x: 0;
     background-position-y: 90%;
-    background-size: 94%; }
+    background-size: 90%; }
   .service__item--polygraphy {
     padding-right: 0;
     padding-bottom: 40px;
     padding-top: 40px;
     margin-top: 20px;
     background-image: url("../img/plane-desktop@1x.png"), url("../img/abstract-desktop@1x.png");
+    background-size: 503px 340px, 648px 544px;
     background-position: 100% calc(100% - 70px), 100% 0; }
   .service__item--polygraphy .service__item-wrapper {
     width: 40%; }
@@ -1514,7 +1530,8 @@ body {
 
 @media (min-width: 1170px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1170px) and (min-resolution: 144dpi), (min-width: 1170px) and (min-resolution: 1.5dppx) {
   .service__item--interior {
-    background-image: url("../img/interior-desktop2x.png"); }
+    background-image: url("../img/interior-desktop@2x.png");
+    background-size: 80%; }
   .service__item--polygraphy {
     background-image: url("../img/plane-desktop@2x.png"), url("../img/abstract-desktop@2x.png"); } }
 
