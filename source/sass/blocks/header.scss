@@ -93,6 +93,7 @@
 @media (max-width: $mobilewidthonly) {
   .header__content {
     background-image: url("../img/header-mobile@1x.png");
+    background-size: 309px 288px;
   }
 }
 
@@ -170,6 +171,7 @@
     padding-bottom: 40px;
     padding-left: 60%;
     background-image: url("../img/header-tablet@1x.png");
+    background-size: 546px 462px;
     background-position-x: -100px;
   }
 }
@@ -181,14 +183,20 @@
 }
 
 @media (min-width: $desktopwidth) {
+  .header {
+    padding: 50px;
+  }
+
   .header__content {
     background-image: url("../img/header-desktop@1x.png");
+    background-size: 647px 548px;
     padding-bottom: 120px;
     padding-top: 140px;
   }
 
   .header__navigation {
     display: flex;
+    flex-wrap: nowrap;
     width: 100%;
   }
 
@@ -196,14 +204,15 @@
     padding: 0;
     margin: 0;
     margin-left: auto;
+    max-width: 550px;
   }
 
   .header__links {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
     margin: 0;
-    margin-top: 8px;
+    padding: 3px;
+    max-width: 400px;
   }
 
   .header__link {
@@ -211,7 +220,7 @@
     vertical-align: bottom;
     min-height: 20px;
     line-height: 20px;
-    padding: 4px 10px;
+    padding: 7px 10px 6px;
     margin-left: 40px;
 
     &:hover,
@@ -228,7 +237,8 @@
   .header__link--order {
     font-size: 11px;
     border: 2px solid $basewhite;
-    border-radius: 25px;
+    border-radius: 30px;
+    width: 165px;
 
     &:hover {
       background-color: $basewhite;

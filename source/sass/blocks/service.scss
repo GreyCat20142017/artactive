@@ -90,6 +90,7 @@
 
   .service__item--interior {
     background-image: url("../img/interior-mobile@1x.png");
+    background-size: 268px 332px;
   }
 
   .service__item--polygraphy {
@@ -133,6 +134,7 @@
   .service__item--interior {
     padding-bottom: 330px;
     background-image: url("../img/interior-tablet@1x.png");
+    background-size: 513px 599px;
   }
 
   .service__item--polygraphy {
@@ -140,6 +142,7 @@
     padding-top: 60px;
     background-image: url("../img/plane-tablet@1x.png"), url("../img/abstract-tablet@1x.png");
     background-position: 40% calc(100% - 110px), 130% 100%;
+    background-size: 138px 161px, 453px 381px;
   }
 
   .service__item--polygraphy .form--light {
@@ -218,9 +221,9 @@
     padding-bottom: 330px;
     padding-left: 60%;
     background-image: url("../img/interior-desktop@1x.png");
-    background-position-x: -60px;
+    background-position-x: 0;
     background-position-y: 90%;
-    background-size: 94%;
+    background-size: 90%;
   }
 
   .service__item--polygraphy {
@@ -229,6 +232,7 @@
     padding-top: 40px;
     margin-top: 20px;
     background-image: url("../img/plane-desktop@1x.png"), url("../img/abstract-desktop@1x.png");
+    background-size: 503px 340px, 648px 544px;
     background-position: 100% calc(100% - 70px), 100% 0;
   }
 
@@ -256,7 +260,8 @@
 
 @media (min-width: $desktopwidth) and (min-resolution: $retinadpi), (min-width: $desktopwidth) and (min-resolution: $retinadppx) {
   .service__item--interior {
-    background-image: url("../img/interior-desktop2x.png");
+    background-image: url("../img/interior-desktop@2x.png");
+    background-size: 80%;
   }
 
   .service__item--polygraphy {

@@ -1,0 +1,23 @@
+{
+  "name": "artactive",
+  "version": "1.0.0",
+  "description": "Просто верстка макета из рассылки",
+  "main": "index.html",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreyCat20142017/artactive.git"
+  },
+  "author": "greycat20142017",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GreyCat20142017/artactive/issues"
+  },
+  "homepage": "https://github.com/GreyCat20142017/artactive",
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
