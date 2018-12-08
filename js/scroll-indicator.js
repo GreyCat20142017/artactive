@@ -133,7 +133,7 @@
     removeClassName(indicatorArea, 'indicator--nojs')
 
     window.addEventListener('scroll', onWindowScroll);
-    document.addEventListener('wheel', onDocumentWheel);
+    document.addEventListener('wheel', onDocumentWheel, {passive: true});
 
     if (indicatorArea) {
       indicatorArea.addEventListener('click', onIndicatorClick);

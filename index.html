@@ -144,12 +144,12 @@
             <h4 class="form__title">Оставьте заявку на консультацию</h4>
             <div class="form__fieldset">
               <div class="form__field">
-                <label class="form__label visually-hidden" for="id-name-1">Имя</label>
-                <input class="form__input" type="text" id="id-name-1" placeholder="Имя" title="Имя" required="">
+                <label class="form__label visually-hidden" for="id-name-service">Имя</label>
+                <input class="form__input" type="text" id="id-name-service" placeholder="Имя" title="Имя" required="">
               </div>
               <div class="form__field">
-                <label class="form__label visually-hidden" for="id-tel-1">Телефон</label>
-                <input class="form__input" type="text" id="id-tel-1" placeholder="Телефон" title="Телефон" required="">
+                <label class="form__label visually-hidden" for="id-tel-service">Телефон</label>
+                <input class="form__input" type="text" id="id-tel-service" placeholder="Телефон" title="Телефон" required="">
               </div>
               <button class="form__button btn btn--primary" type="submit" title="Заказать консультацию">Отправить</button>
             </div>
@@ -213,12 +213,12 @@
         <h4 class="form__title">Оставьте заявку на консультацию</h4>
         <div class="form__fieldset">
           <div class="form__field">
-            <label class="form__label visually-hidden" for="id-name-1">Имя</label>
-            <input class="form__input" type="text" id="id-name-1" placeholder="Имя" title="Имя" required="">
+            <label class="form__label visually-hidden" for="id-name-faq">Имя</label>
+            <input class="form__input" type="text" id="id-name-faq" placeholder="Имя" title="Имя" required="">
           </div>
           <div class="form__field">
-            <label class="form__label visually-hidden" for="id-tel-1">Телефон</label>
-            <input class="form__input" type="text" id="id-tel-1" placeholder="Телефон" title="Телефон" required="">
+            <label class="form__label visually-hidden" for="id-tel-faq">Телефон</label>
+            <input class="form__input" type="text" id="id-tel-faq" placeholder="Телефон" title="Телефон" required="">
           </div>
           <button class="form__button btn btn--primary" type="submit" title="Заказать консультацию">Отправить</button>
         </div>
@@ -230,7 +230,7 @@
   <section class="map" id="map">
     <h2 class="visually-hidden">Адрес, карта и контакты</h2>
 
-    <div class="map__contacts contacts js js__link">
+    <div class="map__contacts contacts js js__link" title="Для переключения между интерактивной и статичной картой - двойной щелчок по области с адресом или статичной карте">
         <h3 class="contacts__title page__counter">Контакты</h3>
         <p class="contacts__info contacts__info--pin">г.Ярославль, проспект Октября, 88</p>
         <a class="contacts__info contacts__info--mail contacts__link" href="mailto:art-aktiv.76@mail.ru" title="E-mail">art-aktiv.76@mail.ru</a>
@@ -245,7 +245,7 @@
       <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
       <img class="map__image map__image--static map__image--show js js__link" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Ярославль, проспект Октября, 88" title="Ярославль, проспект Октября, 88" id="id-map-static">
     </picture>
-    <div class="map__image map__image--api map__image--hide map__image--nojs js js__link" id="id-map-api">
+    <div class="map__image map__image--api map__image--hide map__image--nojs js js__link" id="id-map-api" title="Для переключения к статичной карте - двойной щелчок по области с адресом или интерактивной карте">
 
     </div>
 

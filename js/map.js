@@ -2,6 +2,9 @@
 
 (function(){
 // карта  ----------------------------------------
+var PROJECT_NAME = 'artactive';
+var PIN_PATH = 'img/pin.svg';
+
 var initMap = function () {
   var myMap = new ymaps.Map("id-map-api", {
     center: [57.656628, 39.846121],
@@ -11,10 +14,12 @@ var initMap = function () {
   myMap.controls.remove('searchControl').remove('trafficControl').remove('geolocationControl');
 
   // myMap.behaviors.disable(['drag', 'scrollZoom']);
+  var pinPath = (window.location.host === 'localhost:3000') ? PIN_PATH : PROJECT_NAME + '/' + PIN_PATH;
+  console.log(pinPath);
 
   var myPin = new ymaps.GeoObjectCollection({}, {
     iconLayout: 'default#image',
-    iconImageHref: 'img/pin.svg',
+    iconImageHref: pinPath,
     iconImageSize: [28, 38],
     iconImageOffset: [0, -38]
   });
