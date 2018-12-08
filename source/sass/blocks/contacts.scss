@@ -1,9 +1,7 @@
-.contacts__wrapper {
+.contacts {
   display: flex;
   flex-direction: column;
   margin: 0;
-  width: 290px;
-  min-height: 266px;
   padding: 40px 40px 20px;
   background-color: $basewhite;
   border-radius: 10px;
@@ -70,18 +68,13 @@
     margin: 20px 0;
   }
 
-  .contacts__wrapper {
-    width: 50%;
+  .contacts {
     padding: 30px 40px 20px;
-    max-height: 400px;
-    min-height: 323px;
   }
 }
 
 @media (min-width: $desktopwidth) {
-  .contacts__wrapper {
-    width: 458px;
-    min-height: 383px;
+  .contacts {
     padding: 60px 45px 20px;
   }
 }

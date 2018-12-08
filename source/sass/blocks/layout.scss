@@ -21,11 +21,11 @@
     width: $desktopwidth;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     &--limited {
-      max-width: 1440px;
+      max-width: 1300px;
     }
   }
 }
