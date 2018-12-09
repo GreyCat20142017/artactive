@@ -14,8 +14,10 @@ var initMap = function () {
   myMap.controls.remove('searchControl').remove('trafficControl').remove('geolocationControl');
 
   // myMap.behaviors.disable(['drag', 'scrollZoom']);
-  var pinPath = (window.location.host === 'localhost:3000') ? PIN_PATH : PROJECT_NAME + '/' + PIN_PATH;
-  console.log(pinPath);
+  // var pinPath = (window.location.host === 'localhost:3000') ? PIN_PATH : PROJECT_NAME + '/' + PIN_PATH;
+  // console.log(pinPath);
+  // Через день по-разному строит пути?
+  var pinPath = PIN_PATH;
 
   var myPin = new ymaps.GeoObjectCollection({}, {
     iconLayout: 'default#image',

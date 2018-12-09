@@ -1063,6 +1063,9 @@ body {
   .indicator {
     right: 10vw; } }
 
+.js__link {
+  cursor: pointer; }
+
 .layout {
   width: 320px;
   margin-left: auto;
