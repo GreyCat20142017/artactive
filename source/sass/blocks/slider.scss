@@ -13,6 +13,7 @@
   box-shadow: 0 20px 46px 0 rgba(80, 9, 79, 0.35);
 }
 
+
 .slider__image--shadowed {
   // box-shadow: 0 20px 46px 0 rgba(80, 9, 79, 0.35);
 }
@@ -127,8 +128,13 @@
     display: flex;
   }
 
+  .slider__text {
+    max-width: 600px;
+  }
+
   .slider__wrapper--person {
     flex-direction: column;
+    padding: 0 10px;
   }
 
   .slider__wrapper--simple {
