@@ -411,7 +411,8 @@ body {
   .about__image {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
-            order: 0; }
+            order: 0;
+    padding-right: 6%; }
   .about__wrapper {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -1645,11 +1646,14 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .slider__text {
+    max-width: 600px; }
   .slider__wrapper--person {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    padding: 0 10px; }
   .slider__wrapper--simple {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;

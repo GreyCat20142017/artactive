@@ -16,7 +16,7 @@ var initMap = function () {
   // myMap.behaviors.disable(['drag', 'scrollZoom']);
   // var pinPath = (window.location.host === 'localhost:3000') ? PIN_PATH : PROJECT_NAME + '/' + PIN_PATH;
   // console.log(pinPath);
-  // Через день по-разному строит пути?
+  // Через день по-разному строит пути???
   var pinPath = PIN_PATH;
 
   var myPin = new ymaps.GeoObjectCollection({}, {
